@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .item{
+            display: inline;
+            padding: 12px 16px;
+            background-color: lightblue;
+            }
+            .section{
+                width: 100%;
+                height: 500px;
+            }
+            #first-section{
+                background-color: lightgreen;
+            }
+            #second-section{
+                background-color: lightpink;
+            }
+            #third-section{
+                background-color: lightblue
+            }
+        </style>
+    </head>
+    <body style="margin:0;">
+        <ul id="topbar">
+            <li class="item"><a href="#first-section">Home</li>
+<!-- By using that id it will work as bookmark and will direct you to that part after clicking -->
+            <li class="item"><a href="#second-section">About</li>
+            <li class="item"><a href="#third-section">Contact</li>
+        </ul>
+<!-- Here if er need to give diff color to each section we can't use section class so use id -->
+        <div class="section" id="first-section">
+            <h1 class="section-heading">Landing Section</h1>
+        </div>
+        <div class="section" id="second-section">
+            <h1 class="section-heading">About Section</h1>
+        </div>
+        <div class="section" id="third-section">
+            <h1 class="section-heading">Contact Section</h1>
+        </div>
+    </body>
+</html>
